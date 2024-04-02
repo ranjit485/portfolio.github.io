@@ -34,5 +34,3 @@ I've created many projects from scratch and have great experience working with a
 ---
 
 Feel free to reach out to me for your web development and AI needs! Let's build something amazing together! 🚀
-
-[LinkedIn](https://www.linkedin.com/in/your-linkedin-profile) | [GitHub](https://github.com/your-github-profile) | [Portfolio](https://your-portfolio-website.com)
