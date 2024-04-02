@@ -16,7 +16,7 @@ timezone: Asia/Calcutta
 
 title: Ranjit # the main title
 
-tagline: "I'm a tech-savvy AI enthusiast with a fiery passion for programming and cutting-edge technology! # it will display as the sub-title
+tagline: I'm a tech-savvy AI enthusiast with a fiery passion for programming and cutting-edge technology! # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
