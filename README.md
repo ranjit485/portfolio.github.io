@@ -3,11 +3,7 @@
 
   <!-- markdownlint-disable-next-line -->
   # Chirpy Jekyll Theme
-
-  [**Live Demo** →][demo]
-
-  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
-
+  
 </div>
 
 ## Features
