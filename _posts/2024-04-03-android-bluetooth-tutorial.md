@@ -12,39 +12,57 @@ mermaid: true
 <h2>activity_main.xml</h2>
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/turn_on_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn On Bluetooth"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <Button
+        android:id="@+id/turn_off_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Off Bluetooth"
+        android:layout_below="@id/turn_on_btn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
-    <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.PracticalMad"
-        tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+    <Button
+        android:id="@+id/visible_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Visible"
+        android:layout_below="@id/turn_off_btn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-    </application>
+    <Button
+        android:id="@+id/list_devices_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Devices"
+        android:layout_below="@id/visible_btn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
-</manifest>
+    <ListView
+        android:id="@+id/devices_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_devices_btn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+
 ```
 <h2>ActivityMain.java</h2>
 ```
