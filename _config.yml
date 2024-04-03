@@ -140,7 +140,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "https://ranjit485.github.io"
+baseurl: "/ranjit485"
 
 # ------------ The following options are not recommended to be modified ------------------
 
